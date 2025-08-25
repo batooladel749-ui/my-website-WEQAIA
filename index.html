@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<title>WEQAIA-وقاية</title>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&family=Cairo:wght@400;700&family=Changa:wght@400;700&family=Lateef&family=Noto+Kufi+Arabic&family=Noto+Naskh+Arabic&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+   <body>
+<div class="container">
+
+    <!-- شريط تنقل مستطيل منفصل -->
+    <div class="navbar-wrap">
+      <nav class="navbar" aria-label="التنقل">
+        <ul class="nav-list">
+          <!-- نستخدم href بالهاش عشان التاريخ/الرجوع يشتغل -->
+         <li><a class="nav-link active" href="index.html" data-route="index" id="indexLink" class:1={active}>الرئيسية</a></li>
+           <li><a class="nav-link" href="about.html" data-route="about" id="about">تعريف</a></li>
+           <li><a class="nav-link" href="how.html"  data-route="how" id="howLink">كيف نحمي انفسنا؟</a></li>
+         <li><a class="nav-link" href="mymessage.html"data-route="mymessage" id="mymessage">رسالتي</a></li>
+        </ul>
+      </nav>
+    </div>
+<script>
+  // أول ما الصفحة تفتح
+  document.addEventListener("DOMContentLoaded", () => {
+    let currentPage = window.location.pathname.split("/").pop(); // اسم الملف الحالي
+    document.querySelectorAll(".nav-link").forEach(link => {
+      if (link.getAttribute("href") === currentPage) {
+        link.classList.add("active");
+      }
+    });
+  });
+</script>
+
+    <!-- منطقة المحتوى التي ستتغير -->
+    <main id="content" class="content-card" tabindex="-1" aria-live="polite">
+      <!-- يتم ملؤها عبر JS -->
+    </main>
+
+
+
+  
+    <div class="row1">
+  <img src="images/logo1.jpg" alt="لوجو جامعة الطفل" width="150">
+  <img src="images/download.png" alt="صورة شعار  المجلس القومي للطفولة والامومة" width="150">
+    <img src="images/logo2.png" alt="لوجو الجامعة التكنولوجية" width="150"> 
+   </div>
+   <h1 class="cairo" id="h11">"معاً ضد التنمر والتحرش والعنف"</h1>        
+   <img src="images/happy-kid.png" alt="اطفال سعداء" class="foto2">
+   <p id="special">التنمر و التحرش و العنف من السلوكيات السلبية المنتشرة حاليا بين الاطفال والمراهقين، لهذه السلوكيات اثراً سلبياً على نفسية وصحة المتعرضين لها، لذا دعونا نتعرف على كل سلوك بالتفصيل من هنا:</p>
+   <div class="center1">
+   <button onclick="window.location.href='about.html'" class="cairo">التالي</button>
+   </div>
+   <!-- HTML -->
+<footer class="footer">
+  <p>© 2025 Batool Adel - جميع الحقوق محفوظة</p>
+  <div class="social">
+    <a href="#">Facebook</a> | 
+    <a href="#">Instagram</a> | 
+    <a href="#">YouTube</a>
+  </div>
+</footer>
+
+  </body>
+</html>
+
+

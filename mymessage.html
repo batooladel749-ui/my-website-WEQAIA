@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<title>WEQAIA-وقاية</title>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&family=Cairo:wght@400;700&family=Changa:wght@400;700&family=Lateef&family=Noto+Kufi+Arabic&family=Noto+Naskh+Arabic&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+   <body>
+<!-- شريط التنقل -->
+<!-- شريط تنقل مستطيل منفصل -->
+    <div class="navbar-wrap">
+      <nav class="navbar" aria-label="التنقل">
+        <ul class="nav-list">
+          <!-- نستخدم href بالهاش عشان التاريخ/الرجوع يشتغل -->
+          <li><a class="nav-link" href="index.html"   data-route="index"   id="indexLink">الرئيسية</a></li>
+          <li><a class="nav-link" href="about.html" data-route="about" id="about">تعريف</a></li>
+          <li><a class="nav-link" href="how.html"  data-route="how"  id="howLink">كيف نحمي انفسنا؟</a></li>
+          <li><a class="nav-link active" href="mymessage.html"data-route="mymessage"id="mymessage" class:4={active}>رسالتي</a></li>
+        </ul>
+      </nav>
+    </div>
+    <script>
+  // أول ما الصفحة تفتح
+  document.addEventListener("DOMContentLoaded", () => {
+    let currentPage = window.location.pathname.split("/").pop(); // اسم الملف الحالي
+    document.querySelectorAll(".nav-link").forEach(link => {
+      if (link.getAttribute("href") === currentPage) {
+        link.classList.add("active");
+      }
+    });
+  });
+</script>
+
+    <!-- منطقة المحتوى التي ستتغير -->
+    <main id="content" class="content-card" tabindex="-1" aria-live="polite">
+      <!-- يتم ملؤها عبر JS -->
+    </main>
+<h1>هنا اتوجه برسالتي لكم لوقف التنمر والتحرش و العنف:</h1>
+<p>
+نجتمع اليوم لنعبر عن رفضنا الواضح للتنمّر والتحرّش والعنف. هذه الأفعال ليست مجرد سلوكيات سيئة، بل هي جراح تترك أثرًا عميقًا في قلوب الأطفال والكبار.
+
+واجبنا أن نحمي بعضنا بعضًا، وأن نقول كلمة "لا" لكل من يحاول أن يؤذي أو يسخر أو يعتدي. فلنزرع الاحترام مكان السخرية، والمحبة بدل العنف، ولنقف جميعًا بوجه من يحاول أن يسرق الأمان من حياتنا.
+
+معًا نستطيع أن نبني مجتمعًا آمنًا، يحيا فيه كل إنسان بكرامة وطمأنينة.</p>
+<div class="row3">
+<div class="video container2"> 
+    <h3>#انا_ضد_التنمر</h3>
+<iframe width="400" height="300" 
+src="https://www.youtube.com/embed/DbHgtsHLdew?si=aYnDlx-7l0LVGmk5" 
+title="YouTube video player"
+ frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+  referrerpolicy="strict-origin-when-cross-origin"
+   allowfullscreen>
+</iframe>
+</div>
+<div class="video container2">
+    <h3>#جسدي_ملكي_وكرامتي_حقي</h3>
+<iframe width="400" height="300"
+ src="https://www.youtube.com/embed/GMvFriimY4M?si=Ste5jbWbM68IixHc"
+ title="YouTube video player" 
+ frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+   referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen>
+</iframe>
+</div>
+<div class="video container2"> 
+<h3>#الاحترام_قوة_و_العنف_ضعف</h3>
+    <iframe width="400" height="300" 
+    src="https://www.youtube.com/embed/7oxyOiLtM9k?si=K_ApRaS7IO8Ch6Q_" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+     referrerpolicy="strict-origin-when-cross-origin" 
+     allowfullscreen>
+    </iframe>
+</div>
+
+</div>
+<div class="hh2">
+<h2>"معاً نصنع وطناً آمناً بلا تنمر أو تحرش أو عنف... معاً نصنع وطناً سوياً و أجيالاً مُحبه"</h2>
+</div>
+<footer class="footer">
+  <p>© 2025 Batool Adel - جميع الحقوق محفوظة</p>
+  <div class="social">
+    <a href="#">Facebook</a> | 
+    <a href="#">Instagram</a> | 
+    <a href="#">YouTube</a>
+  </div>
+</footer>
+</body>
+  </html>
+  

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<title>WEQAIA-وقاية</title>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&family=Cairo:wght@400;700&family=Changa:wght@400;700&family=Lateef&family=Noto+Kufi+Arabic&family=Noto+Naskh+Arabic&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+   <body>
+<!-- شريط تنقل مستطيل منفصل -->
+    <div class="navbar-wrap">
+      <nav class="navbar" aria-label="التنقل">
+        <ul class="nav-list">
+          <!-- نستخدم href بالهاش عشان التاريخ/الرجوع يشتغل -->
+          <li><a class="nav-link" href="index.html"   data-route="index" id="indexLink">الرئيسية</a></li>
+          <li><a class="nav-link" href="about.html" data-route="about" id="about">تعريف</a></li>
+          <li><a class="nav-link active" href="how.html"  data-route="how"  id="howLink" class:3={active}>كيف نحمي انفسنا؟</a></li>
+          <li><a class="nav-link" href="mymessage.html"data-route="mymessage"id="mymessage">رسالتي</a></li>
+        </ul>
+      </nav>
+    </div>
+    <script>
+  // أول ما الصفحة تفتح
+  document.addEventListener("DOMContentLoaded", () => {
+    let currentPage = window.location.pathname.split("/").pop(); // اسم الملف الحالي
+    document.querySelectorAll(".nav-link").forEach(link => {
+      if (link.getAttribute("href") === currentPage) {
+        link.classList.add("active");
+      }
+    });
+  });
+</script>
+
+    <!-- منطقة المحتوى التي ستتغير -->
+    <main id="content" class="content-card" tabindex="-1" aria-live="polite">
+      <!-- يتم ملؤها عبر JS -->
+    </main>
+  
+
+    <div class="content" id="content">
+    <h1 id="h12">كيف نحمي انفسنا من التنمر والتحرش و العنف..؟</h1>
+<h2>اولا سنبدأ نصيحتنا للاطفال:</h2>
+    <UL>
+<li>إذا شعرت أن أحدًا يضايقك بالكلام أو الفعل، أخبر والدك أو والدتك أو معلمك فورًا.</li>
+
+<li>لا ترد العنف بالعنف، بل حاول الابتعاد بهدوء.</li>
+<li>تذكر دائمًا أن جسمك ملكك، ولا يحق لأحد أن يلمسه أو يقترب منك بطريقة تزعجك.</li>
+
+<li>إذا حاول أحد أن يؤذيك، قل كلمة "توقف" بصوت واضح، ثم غادر المكان بسرعة.</li>
+
+<li>لا تقبل أسرارًا تخيفك من أي شخص، بل شاركها مع من تثق به.</li>
+<li>اختر أصدقاء طيبين، وابتعد عن من يسخرون أو يؤذون الآخرين.</li>
+<li>إذا ضايقك أحد عبر الهاتف أو الإنترنت، أغلق المحادثة وأخبر الكبار.</li>
+<li>تذكر أن الشجاعة ليست في الضرب، بل في أن تحمي نفسك وتطلب المساعدة.</li>
+<li>كن واثقًا من نفسك، ولا تدع كلمات الآخرين تضعفك.</li>
+<li>ساعد غيرك إذا رأيت صديقًا يتعرض للأذى، بأن تبلغ معلمًا أو شخصًا كبيرًا.</li>
+    </UL>
+  
+<div class="row2">
+ <div class="video container">
+    <h3 class="h31">فيديو توعوي عن التنمر:</h3>
+    <iframe width="400" height="300"
+  src="https://www.youtube.com/embed/WYSGB5xDJ0s?si=WNUKRupaRnI3C6rl"
+   title="فيديو توعوي عن التنمر" 
+   frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin" 
+    allowfullscreen>
+</iframe>
+</div>
+ <div class="video container">
+<h3 class="h32">فيديو توعوي عن التحرش:</h3>
+<iframe width="400"
+ height="300"
+  src="https://www.youtube.com/embed/7ZBkqsPLMuM?si=Aurv1kWTXNFwf7lH"
+   title="فيديو توعوي عن التحرش"
+    frameborder="0"
+     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" 
+      allowfullscreen>
+    </iframe>
+</div>
+ <div class="video containe">
+    <h3 class="h33">فيديو توعوي عن العنف:</h3>
+    <iframe width="400" 
+height="300" 
+src="https://www.youtube.com/embed/z676eO7cKes?si=89zlauXDARNZXmPv"
+ title="فيديو توعوي عن العنف"
+  frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+  referrerpolicy="strict-origin-when-cross-origin"
+   allowfullscreen>
+</iframe>
+</div>
+</div>
+</UL>
+<h2>هنا نتوجه بنصيحتنا الى اللآباء و المعلمين:</h2>
+<p>يقع على الوالدين و المعلمين دور كبير في الاستماع إلى الاطفال وتشجيعهم على التحدث، مع غرس الثقة بالنفس وتعليمهم احترام الآخرين. كما ينبغي مراقبة بيئة الطفل المدرسية والرقمية، وتقديم الدعم النفسي له إذا مر بتجربة سلبية.
+وبالتعاون بين الأسرة والمدرسة والمجتمع، نستطيع أن نوفر بيئة أكثر أمانًا، تقل فيها فرص العنف ويكبر الأطفال وهم أكثر قوة وثقة.</p>
+<h2>عند حدوث أياً من هذه الحوادث سواء لك او لغيرك فوراً اتصل بخط نجدة الطفل للتصرف باسرع وقت:</h2>
+<p>الخط الساخن:16000</p>
+<p>الموقع الرسمي لالمجلس القومي للطفولة والأمومة: <a class="a1" href="https://nccm.gov.eg/en/">الموقع الرسمي لالمجلس القومي لالمومة و الطفولة(NCCM)</a></p>
+<div class="center1">
+   <button onclick="window.location.href='mymessage.html'" class="cairo">التالي</button>
+   </div>
+
+
+   </body>
+   <footer class="footer">
+  <p>© 2025 Batool Adel - جميع الحقوق محفوظة</p>
+  <div class="social">
+    <a href="#">Facebook</a> | 
+    <a href="#">Instagram</a> | 
+    <a href="#">YouTube</a>
+  </div>
+</footer>
+</html>
